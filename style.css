@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+ #wrapper{
+    width: 100vw; 
+    height: 100vh;  
+    overflow-x: hidden;
+   
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;   
+    background-color: #FFF;
+    overflow-x:none;
+   
+}
+.navbar{
+    width: 1196px;
+    height: 95px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    margin-left: 15px;
+    /* display: flex; */
+    color: #000;
+    font-family: Leckerli One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+   
+}
+#NavB{
+    display: inline-flex;
+    padding-top: 4px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90.5px;
+    
+
+} 
+a{
+   text-decoration: none;
+   -webkit-text-fill-color: #000000;
+}
+.boxcontainer{
+    /* width: 1501px;
+    height: 705.883px; */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+#box1{
+    width: 544px;
+    height: 300px;
+    margin-left: 15px;
+    flex-shrink: 0;  
+    
+   
+}
+h1{
+    color: #000;
+    font-family: Lato;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+p{
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#p1{
+    color: #000;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+.Rectangular{
+    width:  300px;
+    height: 444px;
+    margin-right: 120px;
+    flex-shrink: 0;
+    
+}
+#pics{
+    width:  300px;
+    height: 444px;
+    margin-right: 50px;
+    flex-shrink: 0;
+    border-radius: 15px;  
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.btn-pink{
+    width: 70px;
+    height: 18px;
+    margin-left: 15px;
+    flex-shrink: 0;
+    background-color: rgb(212, 16, 16);
+    border: 2px;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-family: Lato;
+    font-size: 20px;
+    box-shadow: 5px 5px 7px 0px;
+    position: relative;
+    z-index: 1;
+    box-sizing: content-box;
+}
+.btn-pink::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform:scaleX(0) ;
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+}
+.btn-pink:hover::before{
+    transform: scaleX(1);
+   
+}
+.Rectangular img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s linear 0s;
+}
